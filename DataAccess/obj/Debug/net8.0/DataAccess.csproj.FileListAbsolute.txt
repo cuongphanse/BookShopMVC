@@ -17,3 +17,4 @@ C:\UDEMY\MVC\BookShopMVC\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 C:\UDEMY\MVC\BookShopMVC\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\UDEMY\MVC\BookShopMVC\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 C:\UDEMY\MVC\BookShopMVC\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+C:\UDEMY\MVC\BookShopMVC\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
