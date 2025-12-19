@@ -108,7 +108,16 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
             public string? Role { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
-        }
+            [Required]
+            public string Name { get; set; }
+            public string? StreetAdress { get; set; }
+            public string? City { get; set; }
+            public string? State { get; set; }
+            public string? PostalCode { get; set; }
+			[Required(ErrorMessage = "Số điện thoại không được để trống")]
+			[RegularExpression(@"^[0-9]{10}$", ErrorMessage = "Số điện thoại phải là số và đúng 10 chữ số.")]
+			public string? NumberPhone { get; set; }
+		}
 
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -143,6 +152,13 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
                 var user = CreateUser();               
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                user.Name = Input.Name;
+                user.Email = Input.Email;
+                user.StreetAddress = Input.StreetAdress;
+                user.City = Input.City;
+                user.State = Input.State;
+                user.PostalCode = Input.PostalCode;
+                user.PhoneNumber = Input.NumberPhone;
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
