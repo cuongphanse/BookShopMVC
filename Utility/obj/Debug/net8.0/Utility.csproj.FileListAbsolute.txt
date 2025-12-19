@@ -9,3 +9,5 @@ C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\Utility.dll
 C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\refint\Utility.dll
 C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\Utility.pdb
 C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\ref\Utility.dll
+C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\Utility.sourcelink.json
+C:\UDEMY\MVC\BookShopMVC\Utility\obj\Debug\net8.0\Utility.csproj.AssemblyReference.cache

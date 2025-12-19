@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WvsFRk5UBrU=",
+  "dgSpecHash": "UM6jm8+jljE=",
   "success": true,
   "projectFilePath": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.22\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.22.nupkg.sha512",
+    "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.22\\microsoft.aspnetcore.identity.ui.8.0.22.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.3.0\\microsoft.aspnetcore.jsonpatch.2.3.0.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.3.0\\microsoft.aspnetcore.mvc.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.3.0\\microsoft.aspnetcore.mvc.core.2.3.0.nupkg.sha512",
@@ -58,6 +59,7 @@
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.2\\microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\microsoft.extensions.diagnostics.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\8.0.22\\microsoft.extensions.fileproviders.embedded.8.0.22.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.22\\microsoft.extensions.identity.core.8.0.22.nupkg.sha512",
     "C:\\Users\\NCPC\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.22\\microsoft.extensions.identity.stores.8.0.22.nupkg.sha512",
