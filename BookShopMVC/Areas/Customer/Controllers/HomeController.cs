@@ -1,5 +1,7 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using System.Security.Claims;
 using DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -24,11 +26,38 @@ namespace BookShopMVC.Areas.Customer.Controllers
 
         public IActionResult Details(int productId)
         {
-            Product product = _unitOfWork.Product.Get(c=> c.Id == productId, includeProperties:"Category");
-            return View(product);
+            ShoppingCart cart = new()
+            {
+                Product = _unitOfWork.Product.Get(c => c.Id == productId, includeProperties: "Category"),
+                Count = 1,
+                ProductId = productId
+            };
+            return View(cart);
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        [Authorize]
+		public IActionResult Details(ShoppingCart obj)
+		{
+			var claimIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+            obj.ApplicationUserId = userId;
+            ShoppingCart cartFromDB = _unitOfWork.ShoppingCart.Get(u => u.ProductId == obj.ProductId && u.ApplicationUserId == userId);
+            if(cartFromDB != null)
+            {
+                cartFromDB.Count += obj.Count;
+                _unitOfWork.ShoppingCart.Update(cartFromDB);
+            }
+            else
+            {
+                _unitOfWork.ShoppingCart.Add(obj);
+            }
+            _unitOfWork.Save();
+            TempData["success"] = "Thêm giỏ hàng thành công";
+			return RedirectToAction(nameof(Index));
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }

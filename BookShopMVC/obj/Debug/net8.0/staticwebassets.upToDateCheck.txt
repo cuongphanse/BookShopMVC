@@ -10,6 +10,7 @@ wwwroot\images\products\d285e5cb-14c1-47cd-ad0b-7cbfb6fe891d.jpg
 wwwroot\images\products\ec0300cf-4e37-42b0-9925-8e6d3f3bb7f4.jpg
 wwwroot\images\products\empty.png
 wwwroot\js\category.js
+wwwroot\js\company.js
 wwwroot\js\product.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE

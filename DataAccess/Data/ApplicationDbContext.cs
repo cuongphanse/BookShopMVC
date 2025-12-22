@@ -13,8 +13,9 @@ namespace DataAcess.Data
 		}
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<Product> Products { get; set; }
-
-		public DbSet<ApplicationUser> applicationUsers { get; set; }
+		public DbSet<Company> Companies { get; set; }
+		public DbSet<ShoppingCart> ShoppingCarts { get; set; }	
+		public DbSet<ApplicationUser> ApplicationUsers { get; set; } // ke thua Identity nen khong tao table moi
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
@@ -110,6 +111,49 @@ namespace DataAcess.Data
 					ImageUrl = ""
 				}
 				);
+			modelBuilder.Entity<Company>().HasData(
+				new Company 
+				{ 
+					Id = 1, 
+					Name = "Công nghệ TechWorld", 
+					StreetAddress = "123 Đường Láng", 
+					City = "Hà Nội", 
+					State = "Đống Đa", 
+					PostalCode = "100000", 
+					PhoneNumber = "0243333444" 
+				},
+				new Company 
+				{ 
+					Id = 2, 
+					Name = "Thực phẩm sạch GreenFarm", 
+					StreetAddress = "456 Nguyễn Huệ", 
+					City = "TP. Hồ Chí Minh", 
+					State = "Quận 1", 
+					PostalCode = "700000", 
+					PhoneNumber = "0285555666" 
+				},
+				new Company 
+				{ 
+					Id = 3, 
+					Name = "Xây dựng An Gia", 
+					StreetAddress = "78 Lê Lợi", 
+					City = "Đà Nẵng", 
+					State = "Hải Châu", 
+					PostalCode = "550000", 
+					PhoneNumber = "0236777888" 
+				},
+				new Company 
+				{ 
+					Id = 4, 
+					Name = "Logistics Toàn Cầu", 
+					StreetAddress = "101 Trần Phú", 
+					City = "Hải Phòng", 
+					State = "Ngô Quyền", 
+					PostalCode = "180000", 
+					PhoneNumber = "0225999000" 
+				}
+			);
+
 		}
 
 	}
