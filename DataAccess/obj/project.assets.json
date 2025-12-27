@@ -4663,23 +4663,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NCPC\\.nuget\\packages\\": {},
+    "C:\\Users\\phucv\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
-      "outputPath": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\obj\\",
+      "projectPath": "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\phucv\\.nuget\\packages\\",
+      "outputPath": "D:\\Udemy\\BookShopMVC\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phucv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4694,11 +4694,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj": {
-              "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj"
+            "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj": {
+              "projectPath": "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj"
             },
-            "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj": {
-              "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj"
+            "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj": {
+              "projectPath": "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj"
             }
           }
         }

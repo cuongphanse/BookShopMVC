@@ -2,10 +2,11 @@
 using DataAccess.Repository;
 using DataAccess.Repository.IRepository;
 using DataAcess.Data;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using Utility;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
+using Utility;
+using Utility.VnPay;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
@@ -25,7 +26,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
-
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
