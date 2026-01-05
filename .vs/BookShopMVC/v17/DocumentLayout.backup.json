@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Udemy\\BookShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAC6745C-39BC-4901-9484-00D830115C5B}|DataAccess\\DataAccess.csproj|d:\\udemy\\bookshopmvc\\dataaccess\\repository\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC6745C-39BC-4901-9484-00D830115C5B}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeToolTip": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAowJkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T11:26:20.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Program.cs",
-              "RelativeDocumentMoniker": "BookShopMVC\\Program.cs",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Program.cs",
-              "RelativeToolTip": "BookShopMVC\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T11:25:50.134Z",
+              "Title": "order.js",
+              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\wwwroot\\js\\order.js",
+              "RelativeDocumentMoniker": "BookShopMVC\\wwwroot\\js\\order.js",
+              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\wwwroot\\js\\order.js",
+              "RelativeToolTip": "BookShopMVC\\wwwroot\\js\\order.js",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-30T09:59:28.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\DataAccess\\Repository\\VnPayService.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Repository\\VnPayService.cs",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\DataAccess\\Repository\\VnPayService.cs",
-              "RelativeToolTip": "DataAccess\\Repository\\VnPayService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDAAAAA1AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "BookShopMVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T09:56:28.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T11:02:39.185Z",
+              "WhenOpened": "2025-12-30T09:56:14.887Z",
               "EditorCaption": ""
             }
           ]

@@ -9,6 +9,7 @@ wwwroot\images\products\ac38be7c-d423-4bb4-a4b5-168ace44599a.webp
 wwwroot\images\products\cc1406c4-e616-4669-b0d2-6c0514981614.jpg
 wwwroot\js\category.js
 wwwroot\js\company.js
+wwwroot\js\order.js
 wwwroot\js\product.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE

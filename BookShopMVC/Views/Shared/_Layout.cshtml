@@ -27,7 +27,7 @@
                         </li>
                      
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Order" asp-action="Index">Đơn hàng</a>
                         </li>
                         @if (User.IsInRole(SD.Role_Admin))
                         {                         
@@ -67,10 +67,9 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            Trang web bán sách của Cường 
+    <footer class="border-top py-2 text-muted">
+        <div class="container text-center">
+            Trang web bán sách của Cường
             <i class="bi bi-journal"></i>
             <i class="bi bi-journal"></i>
             <i class="bi bi-journal"></i>
