@@ -3,9 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 # Custom ignored files
-appsettings.json
-appsettings.Development.json
-appsettings.Production.json
+BookShopMVC/appsettings.json
+BookShopMVC/appsettings.Development.json
+BookShopMVC/appsettings.Production.json
 # User-specific files
 *.rsuser
 *.suo
