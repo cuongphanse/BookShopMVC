@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +40,10 @@
               "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
               "ToolTip": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
               "RelativeToolTip": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAA2wMYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAUwMYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T19:03:20.761Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -55,8 +55,7 @@
               "RelativeToolTip": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAAwwNUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T18:59:01.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T18:59:01.155Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAAE0AAAAAAAAAAAAQwH4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-15T18:48:54.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T18:48:54.079Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "BookShopMVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAADMAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-15T18:45:35.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T18:45:35.928Z"
             }
           ]
         }
