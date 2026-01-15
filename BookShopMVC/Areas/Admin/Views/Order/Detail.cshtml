@@ -124,7 +124,7 @@
                                 <div class="col-9">
                                     @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
                                     {
-                                        <input asp-for="OrderHeader.Carrier" type="text" class="form-control" />
+                                        <input asp-for="OrderHeader.Carrier" id="carrier" type="text" class="form-control" />
                                     }
                                     else
                                     {
@@ -133,11 +133,11 @@
                                 </div>
                             </div>
                             <div class="row my-1">
-                                <div class="col-3">Tracking</div>
+                                <div class="col-3">Mã theo dõi</div>
                                 <div class="col-9">
                                     @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
                                     {
-                                        <input asp-for="OrderHeader.TrackingNumber" type="text" class="form-control" />
+                                        <input asp-for="OrderHeader.TrackingNumber" id="trackingNumber" type="text" class="form-control" />
                                     }
                                     else
                                     {
@@ -145,6 +145,15 @@
                                     }
                                 </div>
                             </div>
+                            @if (Model.OrderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment)
+                            {
+                                <div class="row my-1">
+                                    <div class="col-3">Ngày đến hạn thanh toán</div>
+                                    <div class="col-9">
+                                        <input value="@Model.OrderHeader.PaymentDueDate.ToShortDateString()" readonly type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            }
                             <div class="row my-1">
                                 <div class="col-3">Shipping Date</div>
                                 <div class="col-9">
@@ -199,10 +208,28 @@
                                     </div>
                                 </li>
                             </ul>
-                            <input type="submit" class="btn btn-success form-control my-1" value="Thanh toán" />
-                            <input type="submit" class="btn btn-primary form-control my-1" value="Bắt đầu xử lý" />
-                            <input type="submit" class="btn btn-primary form-control my-1" value="Đơn hàng vận chuyển" />
-                            <input type="submit" class="btn btn-danger form-control my-1" value="Hủy đơn" />
+                            @if (Model.OrderHeader.PaymentStatus == SD.PaymentStatusDelayedPayment && Model.OrderHeader.OrderStatus == SD.StatusShipped){
+
+                                <button type="submit" asp-action="PayNow" class="btn btn-success form-control my-1">Thanh toán</button>
+                            }
+                            @if(User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_Employee))
+                            {
+                                @if(Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                                {                                     
+                                    <button type="submit" asp-action="StartProcesscing" class="btn btn-primary form-control my-1">Đóng gói</button>
+                                }
+                                @if (Model.OrderHeader.OrderStatus == SD.StatusInProcess)
+                                {
+                                    <button type="submit" asp-action="ShipProcesscing" onclick="return validateInput()" class="btn btn-primary form-control my-1">Vận chuyển đơn</button>
+                                }     
+                                @if (Model.OrderHeader.OrderStatus != SD.StatusShipped &&
+                                Model.OrderHeader.OrderStatus != SD.StatusRefunded &&
+                                Model.OrderHeader.OrderStatus != SD.StatusCancelled)
+                                {
+                                    <button type="submit" asp-action="CancelOrder" class="btn btn-danger form-control my-1">Hủy đơn</button>
+                                }                               
+                            }
+                            
                         </div>
                     </div>
                 </div>
@@ -210,3 +237,29 @@
         </div>
     </div>
 </form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function validateInput() {
+            var trackingNumber = document.getElementById("trackingNumber").value;
+            var carrier = document.getElementById("carrier").value;
+            if (trackingNumber == "")  {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Lỗi',
+                    text: 'Vui lòng nhập số theo dõi vận chuyển!'
+                });
+                return false; // Ngăn chặn việc gửi biểu mẫu
+            }
+            if (carrier == "")  {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Lỗi',
+                    text: 'Vui lòng nhập số hãng vận chuyển!'
+                });
+                return false; // Ngăn chặn việc gửi biểu mẫu
+            }
+            return true; // Cho phép gửi biểu mẫu
+        }
+    </script>
+}

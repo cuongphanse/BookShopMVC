@@ -47,10 +47,10 @@ namespace DataAccess.Repository
 			return query.FirstOrDefault();
 		}
 
-		public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter, string? includeProperties = null)
+		public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter, string? includeProperties = null, bool tracked = false)
 		{
-			IQueryable<T> query = dbSet;
-			if(filter != null)
+			IQueryable<T> query = tracked ? dbSet : dbSet.AsNoTracking();
+			if (filter != null)
 			{
 				query = query.Where(filter);
 			}

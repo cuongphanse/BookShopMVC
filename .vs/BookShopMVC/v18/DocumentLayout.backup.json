@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Udemy\\BookShopMVC\\",
+  "WorkspaceRootPath": "C:\\UDEMY\\MVC\\BookShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|c:\\udemy\\mvc\\bookshopmvc\\bookshopmvc\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|c:\\udemy\\mvc\\bookshopmvc\\bookshopmvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|c:\\udemy\\mvc\\bookshopmvc\\bookshopmvc\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|c:\\udemy\\mvc\\bookshopmvc\\bookshopmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|d:\\udemy\\bookshopmvc\\bookshopmvc\\areas\\admin\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB45BA38-ACEC-4383-B8AC-697E19B0E978}|BookShopMVC\\BookShopMVC.csproj|solutionrelative:bookshopmvc\\areas\\admin\\views\\order\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +31,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BookShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BookShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-04T15:54:47.14Z",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
+              "RelativeToolTip": "BookShopMVC\\Areas\\Customer\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAA2wMYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T19:03:20.761Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "BookShopMVC\\Areas\\Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAvAAAAAAAAAA==",
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAwwNUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T15:38:14.829Z",
+              "WhenOpened": "2026-01-15T18:59:01.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
-              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
-              "ToolTip": "D:\\Udemy\\BookShopMVC\\BookShopMVC\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
-              "RelativeToolTip": "BookShopMVC\\Areas\\Admin\\Views\\Order\\Detail.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAACWAAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "BookShopMVC\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwH4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-04T15:37:00.974Z",
+              "WhenOpened": "2026-01-15T18:48:54.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookShopMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\UDEMY\\MVC\\BookShopMVC\\BookShopMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookShopMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADMAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-15T18:45:35.928Z",
               "EditorCaption": ""
             }
           ]

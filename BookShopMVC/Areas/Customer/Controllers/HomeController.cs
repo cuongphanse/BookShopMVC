@@ -4,6 +4,7 @@ using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
+using Utility;
 
 namespace BookShopMVC.Areas.Customer.Controllers
 {
@@ -20,7 +21,14 @@ namespace BookShopMVC.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category");
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var user = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            if(user != null)
+            {
+                HttpContext.Session.SetInt32(SD.SessionCart,
+                    _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == user.Value).ToList().Count());
+			}
+			IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category");
 			return View(productList);
         }
 
@@ -47,10 +55,14 @@ namespace BookShopMVC.Areas.Customer.Controllers
             {
                 cartFromDB.Count += obj.Count;
                 _unitOfWork.ShoppingCart.Update(cartFromDB);
-            }
+				_unitOfWork.Save();
+			}
             else
             {
                 _unitOfWork.ShoppingCart.Add(obj);
+				_unitOfWork.Save();
+				HttpContext.Session.SetInt32(SD.SessionCart,
+                    _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId).ToList().Count());
             }
             _unitOfWork.Save();
             TempData["success"] = "Thêm giỏ hàng thành công";

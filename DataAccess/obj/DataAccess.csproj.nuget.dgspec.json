@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj": {}
+    "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj": {
+    "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Udemy\\BookShopMVC\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\phucv\\.nuget\\packages\\",
-        "outputPath": "D:\\Udemy\\BookShopMVC\\DataAccess\\obj\\",
+        "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "C:\\UDEMY\\MVC\\BookShopMVC\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phucv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj": {
-                "projectPath": "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj"
+              "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj": {
+                "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj"
               },
-              "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj": {
-                "projectPath": "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj"
+              "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj": {
+                "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj"
               }
             }
           }
@@ -87,29 +87,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj": {
+    "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\Udemy\\BookShopMVC\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\phucv\\.nuget\\packages\\",
-        "outputPath": "D:\\Udemy\\BookShopMVC\\Models\\obj\\",
+        "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phucv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -162,29 +176,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj": {
+    "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj",
+        "projectUniqueName": "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "D:\\Udemy\\BookShopMVC\\Utility\\Utility.csproj",
-        "packagesPath": "C:\\Users\\phucv\\.nuget\\packages\\",
-        "outputPath": "D:\\Udemy\\BookShopMVC\\Utility\\obj\\",
+        "projectPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\Utility.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "C:\\UDEMY\\MVC\\BookShopMVC\\Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\phucv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -233,12 +261,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

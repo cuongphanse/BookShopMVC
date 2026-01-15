@@ -3,9 +3,13 @@ wwwroot\favicon.ico
 wwwroot\images\chillguy-gID_7.jpg
 wwwroot\images\products\223a5591-e469-431c-a59b-8da39987861a.jpg
 wwwroot\images\products\2bfbf514-d863-47ca-beeb-d826d176c108.jpg
+wwwroot\images\products\629a9a1d-596f-4bc3-8437-a0d8d82e65f9.jpg
+wwwroot\images\products\7143a060-4590-4eaa-9a36-cfd77fe37100.jpg
+wwwroot\images\products\7df2302e-2bd1-4100-9815-320e671f9434.webp
 wwwroot\images\products\8315aa18-901b-49dd-828d-8ad8fd896c5c.jpg
 wwwroot\images\products\968b6b8e-6c77-4b64-ae81-2f4928da0c59.jpg
 wwwroot\images\products\ac38be7c-d423-4bb4-a4b5-168ace44599a.webp
+wwwroot\images\products\c664a87c-23a5-47dd-8cd1-34a1c6e32e7e.jpg
 wwwroot\images\products\cc1406c4-e616-4669-b0d2-6c0514981614.jpg
 wwwroot\js\category.js
 wwwroot\js\company.js

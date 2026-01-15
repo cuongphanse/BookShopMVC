@@ -10,5 +10,7 @@ namespace DataAccess.Repository.IRepository
 	public interface IOrderHeaderRepository : IRepository<OrderHeader>
 	{
 		void Update(OrderHeader obj);
+		// Thêm tham số optional cho paymentStatus
+		void UpdateStatus(int id, string orderStatus, string? paymentStatus = null);
 	}
 }

@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Models;
+using Utility;
 
 namespace BookShopMVC.Areas.Identity.Pages.Account
 {
@@ -84,7 +86,16 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             public string Email { get; set; }
-        }
+			[Required]
+			public string Name { get; set; }
+			public string? StreetAdress { get; set; }
+			public string? City { get; set; }
+			public string? State { get; set; }
+			public string? PostalCode { get; set; }
+			[Required(ErrorMessage = "Số điện thoại không được để trống")]
+			[RegularExpression(@"^[0-9]{10}$", ErrorMessage = "Số điện thoại phải là số và đúng 10 chữ số.")]
+			public string? NumberPhone { get; set; }
+		}
         
         public IActionResult OnGet() => RedirectToPage("./Login");
 
@@ -111,8 +122,8 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
-            // Sign in the user with this external login provider if the user already has a login.
-            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+			// Sign in the user with this external login provider if the user already has a login.
+			var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (result.Succeeded)
             {
                 _logger.LogInformation("{Name} logged in with {LoginProvider} provider.", info.Principal.Identity.Name, info.LoginProvider);
@@ -131,8 +142,9 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
                 {
                     Input = new InputModel
                     {
-                        Email = info.Principal.FindFirstValue(ClaimTypes.Email)
-                    };
+                        Email = info.Principal.FindFirstValue(ClaimTypes.Email),
+						Name = info.Principal.FindFirstValue(ClaimTypes.Name)						
+					};
                 }
                 return Page();
             }
@@ -155,11 +167,18 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                user.Name = Input.Name;
+                user.PhoneNumber = Input.NumberPhone;
+                user.State = Input.State;
+                user.StreetAddress = Input.StreetAdress;
+                user.City = Input.City;
+                user.PostalCode = Input.PostalCode;
 
-                var result = await _userManager.CreateAsync(user);
+				var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
-                    result = await _userManager.AddLoginAsync(user, info);
+                    await _userManager.AddToRoleAsync(user, SD.Role_Customer);
+					result = await _userManager.AddLoginAsync(user, info);
                     if (result.Succeeded)
                     {
                         _logger.LogInformation("User created an account using {Name} provider.", info.LoginProvider);
@@ -197,11 +216,11 @@ namespace BookShopMVC.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private IdentityUser CreateUser()
+        private ApplicationUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<ApplicationUser>();
             }
             catch
             {

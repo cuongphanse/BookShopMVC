@@ -1,10 +1,12 @@
-
+﻿
 using DataAccess.Repository;
 using DataAccess.Repository.IRepository;
+using DataAccess.Services;
 using DataAcess.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Utility;
 using Utility.VnPay;
 
@@ -24,9 +26,22 @@ builder.Services.ConfigureApplicationCookie(options =>
 	options.LogoutPath = $"/Identity/Account/Logout";
 	options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
 });
+builder.Services.AddAuthentication().AddFacebook(options =>
+{
+	options.AppId = builder.Configuration["OAuth:Facebook:AppId"];
+	options.AppSecret = builder.Configuration["OAuth:Facebook:AppSecret"];
+});
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<IVnPayService, VnPayService>();
+//builder.Services.AddHostedService<OrderCleanupService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,7 +58,7 @@ app.MapRazorPages();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");

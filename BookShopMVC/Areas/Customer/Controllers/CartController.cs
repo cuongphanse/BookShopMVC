@@ -74,16 +74,15 @@ namespace BookShopMVC.Areas.Customer.Controllers
 		[ActionName("Summary")]
 		public IActionResult SummaryPOST()
 		{
-			var claimIdentity = (ClaimsIdentity)User.Identity;
-			var userId = claimIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+			// Tải thông tin cần thiết một lần duy nhất
 			shoppingCartVM.ShoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId,
 				includeProperties: "Product");
-
+			ApplicationUser applicationUser = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
+			// Thiết lập Header đơn hàng
 			shoppingCartVM.OrderHeader.OrderDate = DateTime.Now;
 			shoppingCartVM.OrderHeader.ApplicationUserId = userId;
 
-			ApplicationUser applicationUser = _unitOfWork.ApplicationUser.Get(u => u.Id == userId);
 
 			foreach (var cart in shoppingCartVM.ShoppingCartList)
 			{
@@ -104,6 +103,8 @@ namespace BookShopMVC.Areas.Customer.Controllers
 			}
 			_unitOfWork.OrderHeader.Add(shoppingCartVM.OrderHeader);
 			_unitOfWork.Save();
+
+
 			foreach(var cart in shoppingCartVM.ShoppingCartList)
 			{
 				OrderDetail orderDetail = new()
@@ -125,7 +126,8 @@ namespace BookShopMVC.Areas.Customer.Controllers
 					OrderId = shoppingCartVM.OrderHeader.Id,
 					CreatedDate = DateTime.Now
 				};
-				return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnModel));// Chuyển hướng sang trang VNPay
+				string returnUrl = Url.Action("OrderConfirmation", "Cart", new { id = shoppingCartVM.OrderHeader.Id }, Request.Scheme);
+				return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnModel, returnUrl));// Chuyển hướng sang trang VNPay
 			}
 
 			return RedirectToAction(nameof(OrderConfirmation), new { id = shoppingCartVM.OrderHeader.Id});
@@ -194,6 +196,7 @@ namespace BookShopMVC.Areas.Customer.Controllers
 				_unitOfWork.ShoppingCart.RemoveRange(cartList);
 				_unitOfWork.Save();
 			}
+			HttpContext.Session.Clear();
 		}
 
 		public IActionResult Plus(int cartId)
@@ -206,9 +209,11 @@ namespace BookShopMVC.Areas.Customer.Controllers
 		}
 		public IActionResult Minus(int cartId)
 		{
-			var cartFormDb = _unitOfWork.ShoppingCart.Get(s => s.Id == cartId);
+			var cartFormDb = _unitOfWork.ShoppingCart.Get(s => s.Id == cartId, tracked: true);
 			if (cartFormDb.Count <= 1)
 			{
+				HttpContext.Session.SetInt32(SD.SessionCart,
+				_unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cartFormDb.ApplicationUserId).Count() - 1);
 				_unitOfWork.ShoppingCart.Remove(cartFormDb);
 			}
 			else { 			
@@ -220,7 +225,9 @@ namespace BookShopMVC.Areas.Customer.Controllers
 		}
 		public IActionResult Remove(int cartId)
 		{
-			var cartFormDb = _unitOfWork.ShoppingCart.Get(s => s.Id == cartId);
+			var cartFormDb = _unitOfWork.ShoppingCart.Get(s => s.Id == cartId, tracked: true);
+			HttpContext.Session.SetInt32(SD.SessionCart,
+				_unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cartFormDb.ApplicationUserId).Count() - 1);
 			_unitOfWork.ShoppingCart.Remove(cartFormDb);
 			_unitOfWork.Save();
 			return RedirectToAction("Index");
